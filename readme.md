@@ -1,16 +1,16 @@
-🧱 1.Create a Database and Collection
+🧱 1.Creating a Database and Collection
 
 ![1_1](https://github.com/user-attachments/assets/7c82718a-f559-432e-bb06-612c4a77b611)
 ![1_2](https://github.com/user-attachments/assets/b0cd66f4-0d2d-4b0c-99be-998e167794ee)
 
-  Use database
+  Using database
   
   ![1_3](https://github.com/user-attachments/assets/7b1abaa8-5c61-4948-8127-1012949de143)
 
 
-📥 Insert Data into Collections
+📥 Inserting Data into Collections
 
-students-->
+students =>
 
 ~~~
 db.students.insertMany(
@@ -110,7 +110,7 @@ db.students.insertMany(
 
 ![1_4](https://github.com/user-attachments/assets/a4c0286f-5a77-4d3c-961b-e5e761494420)
 
-grades-->
+grades =>
 
 ~~~
 db.grades.insertMany(
@@ -160,17 +160,17 @@ db.grades.insertMany(
 
 📊 2.Table View
 
-students-->
+students =>
 
 ![2_!](https://github.com/user-attachments/assets/b1561e98-5b13-4e67-8537-921fa7ad0cfe)
 
 
-grades-->
+grades =>
 
 ![2_2](https://github.com/user-attachments/assets/402d610c-1f1f-456e-bd7c-cbf9430607a2)
 
 
-3️. 👩 Find Female Students
+3️. 👩 Finding Female Students
 
 ~~~
 db.students.find({ gender: "Female" },{ _id: 0, name: 1, age: 1, gender: 1 })
@@ -179,7 +179,7 @@ db.students.find({ gender: "Female" },{ _id: 0, name: 1, age: 1, gender: 1 })
 ![3](https://github.com/user-attachments/assets/06a7d271-549a-43e0-859e-e4f7f670736d)
 
 
-4️. 🎓 Find Young Students Enrolled After 2020
+4️. 🎓 Finding Young Students Enrolled After 2020
 
 
 ~~~
@@ -192,7 +192,7 @@ db.students.find({age: { $lt: 22 },enrollmentYear: { $gt: 2020 }})
 
 
 
-5. 📝 Find All Grades for "Alice Johnson"
+5. 📝 Finding All Grades for "Alice Johnson"
 
    ~~~
    db.grades.find({studentId: ObjectId('64b1fcd1f4a13a001e3d41a1')})
@@ -201,7 +201,7 @@ db.students.find({age: { $lt: 22 },enrollmentYear: { $gt: 2020 }})
    ![5](https://github.com/user-attachments/assets/697b6174-9c6e-454b-97a0-57bc5387c072)
 
 
-6. ➕ Count Students Who Took “Mathematics”
+6. ➕ Counting Students Who Took “Mathematics”
 
   ~~~
    db.grades.aggregate([
@@ -222,7 +222,7 @@ db.students.find({age: { $lt: 22 },enrollmentYear: { $gt: 2020 }})
 ![image](https://github.com/user-attachments/assets/85cc02b7-eadb-4e1f-a997-b136098bb9fd)
 
 
-7. 🍁 Find Students with Grades in "Fall 2022"
+7. 🍁 Finding Students with Grades in "Fall 2022"
 
    ~~~
     db.grades.find({ term: "Fall 2022" })
