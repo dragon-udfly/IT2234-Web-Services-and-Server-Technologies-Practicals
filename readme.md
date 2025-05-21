@@ -1,10 +1,9 @@
-##✅ 1. INSERT 
+##1. INSERT 
 
 Method: POST
 
 Body (raw > JSON): Postman
-
-🧑🏻‍💻in visual studio code:
+code:
 ~~~
 router.post('/',async(req,res)=>{
     try{
@@ -28,17 +27,17 @@ router.post('/',async(req,res)=>{
  ![inserted](https://github.com/user-attachments/assets/3fbffc71-6832-453c-96bb-6ee787fcfe63)
 
 
-✨ Required fields are manatory for the given outputs.Otherwise errors will occur.
+Required fields are manatory for the given outputs.
 
 ![error](https://github.com/user-attachments/assets/c602d04a-581b-47fe-bceb-0e2b34fe3141)
 
-##✅ 2. UPDATE
+2. UPDATE
 
 Method: PUT
 
 Body (raw > JSON):Postman
 
-🧑🏻‍💻in visual studio code:
+code: 
 ~~~
 router.put('/:id',async(req,res)=>{
     try{
@@ -67,13 +66,13 @@ router.put('/:id',async(req,res)=>{
 ![updated](https://github.com/user-attachments/assets/6b234168-35c9-4209-9256-b467c1710fd0)
 
 
-##✅ 3. DELETE
+3. DELETE
 
 Method: DELETE
 
 Body (raw > JSON):Postman
 
-🧑🏻‍💻in visual studio code:
+code:
 ~~~
 router.delete('/:id',async(req,res)=>{
     try{
@@ -100,7 +99,7 @@ router.delete('/:id',async(req,res)=>{
 
 ![deleted](https://github.com/user-attachments/assets/b103d3d7-8c37-4746-baa3-c81814784407)
 
-| Codes | Outputs|
+| Code | Output |
 |-------|--------|
 |['index.js'](./Codes/index.js)|![index.png](./Outputs/index.png)|
 |['Course.js'](./Codes/Course.js)|![course.png](./Outputs/course.png)![01.png](./Outputs/01.png)|
